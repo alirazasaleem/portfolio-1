@@ -1,0 +1,249 @@
+ @import url('https://fonts.googleapis.com/css?family=Saira+Condensed:400,600,900');
+ * {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-family: 'Saira Condensed', sans-serif;
+ }
+
+ body {
+   background-color: #fcfcfc;
+ }
+
+ .heading h1 {
+   font-size: calc(100% + 2.25vw);
+   font-weight: 900;
+   text-align: center;
+ }
+ /* Header End */
+ /*.logo{
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  height: 5em;
+  line-height: 5em;
+}
+.logo h1{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+.navigation-bar{
+  height: 4em;
+  background-color: #e9e9e9;
+  line-height: 4em;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
+}
+.navigation-bar ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.navigation-bar ul li{
+  display: inline-block;
+}
+.navigation-bar ul li a{
+  padding: 0 2em;
+  display: block;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+.navigation-bar ul li a:hover{
+  background-color: black;
+}*/
+
+ .navbar-fixed-top {
+   z-index: 4;
+ }
+
+ .main-header {
+   position: relative;
+   background-image: url('../image/header-bg.jpeg');
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+   min-height: 100vh;
+ }
+
+ .main-header::after {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgba(255, 255, 255, 0.3);
+   width: 100%;
+   height: 100%;
+   content: '';
+ }
+
+ .main-header-content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -60%);
+   z-index: 2;
+   background-color: rgba(255, 255, 255, 0.8);
+   padding: 1.75em 4em 2em 4em;
+   text-align: center;
+ }
+
+ .main-header-content h1 {
+   color: #252525;
+   font-size: 4em;
+   font-weight: 600;
+ }
+ /* Header End */
+ /*  About Section */
+
+ .about, .portfolio, .contact {
+   padding-top: 100px;
+   min-height: 100vh;
+ }
+ .columnSplit{
+   -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    column-gap: 30px;
+    /*column-rule: solid;
+    column-rule-color: black;
+    column-rule-width: 1px;*/
+ }
+ @media (max-width:500px) {
+   .columnSplit{
+     -webkit-column-count: 1; /* Chrome, Safari, Opera */
+      -moz-column-count: 1; /* Firefox */
+      column-count: 1;
+      column-gap: normal;
+    }
+ }
+ /*   About Section End*/
+ /* portfolio */
+
+ .gallery>div {
+   position: relative;
+   padding: 0 0px;
+ }
+
+ .gallery img {
+   display: block;
+   cursor: pointer;
+   width: 100%;
+   height: 250px;
+ }
+
+ .gallery .img-hover-effect {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   cursor: pointer;
+   background-color: rgba(0, 0, 0, 0.8);
+   width: 100%;
+   height: 250px;
+ }
+
+ .gallery .img-hover-effect .fa {
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 3;
+   width: 100%;
+   color: white;
+   font-size: 3em;
+   text-align: center;
+ }
+
+ .gallery>div:hover .img-hover-effect {
+   display: block;
+ }
+
+ .preview-img {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 5;
+   background-color: rgba(0, 0, 0, 0.8);
+   width: 100%;
+   height: 100%;
+ }
+
+ .preview-img img {
+   display: block;
+   margin: 0 auto;
+   margin-top: 10vh;
+   max-width: 80%;
+   max-height: 80vh;
+ }
+
+ .preview-img .fa.fa-times-circle-o {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   color: white;
+ }
+ /*.gallery img:hover::before{
+  display: block;
+}*/
+ /* portfolio End */
+ /* Contact us */
+
+ .contact-form>div {
+   padding-top: 70px;
+ }
+
+ .submit-btn, .input-fields {
+   padding: 0 20px;
+ }
+
+ .submit-btn textarea, .input-fields input {
+   margin: 10px 0;
+   border: 1px solid black;
+   padding: 1em 1em;
+   width: 100%;
+ }
+
+ .submit-btn textarea {
+   height: 120px;
+ }
+
+ .submit-btn input[type="button"] {
+   margin-top: 10px;
+   padding: 0.95em;
+   width: 100%;
+ }
+
+ .social-icon {
+   font-size: 2em;
+ }
+
+ .social-icon .fa {
+   margin: 20px 7px;
+ }
+
+ .social-icon .fa-facebook {
+   color: #3B5998;
+ }
+
+ .social-icon .fa-twitter {
+   color: #55ACEE;
+ }
+
+ .social-icon .fa-instagram {
+   color: #125688;
+ }
+
+ .fa-youtube {
+   color: #bb0000;
+ }
+ /* Contact us End */
+ /* Footer */
+
+ footer {
+   background-color: #000;
+   padding: 10px;
+   color: white;
+ }
+ /* Footer End */
