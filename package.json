@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alirazasaleem/portfolio-1/issues"
+  },
+  "homepage": "https://alirazasaleem.github.io/portfolio-1/",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-uglify": "^3.0.2"
+  }
+}
